@@ -8,6 +8,7 @@ const AuthCallbackPage = () => {
   const { isLoaded, user } = useUser();
   const navigate = useNavigate();
   const syncAttempted = useRef(false)
+  
   useEffect(() => {
     const syncUser = async () => {
       try {
