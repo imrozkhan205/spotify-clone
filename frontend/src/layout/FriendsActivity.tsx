@@ -7,7 +7,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { type ClassValue } from 'clsx';
 
 const FriendsActivity = () => {
-  const { users, isLoading, error, fetchUsers } = useChatStore();
+  const { users,fetchUsers } = useChatStore();
   const { user } = useUser();
 
   useEffect(() => {  
